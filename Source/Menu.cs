@@ -4,6 +4,6 @@ namespace restaurant
 {
 	public class Menu
 	{
-		private List<Product> products;
+		public List<Product> Products { get; set; };
 	}
 }
