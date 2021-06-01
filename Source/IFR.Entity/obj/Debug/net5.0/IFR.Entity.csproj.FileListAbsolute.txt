@@ -1,0 +1,12 @@
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.csproj.AssemblyReference.cache
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.AssemblyInfoInputs.cache
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.AssemblyInfo.cs
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.csproj.CoreCompileInputs.cache
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\bin\Debug\net5.0\IFR.Entity.deps.json
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\bin\Debug\net5.0\IFR.Entity.dll
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\bin\Debug\net5.0\ref\IFR.Entity.dll
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\bin\Debug\net5.0\IFR.Entity.pdb
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.dll
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\ref\IFR.Entity.dll
+C:\Users\LuiggiCV\source\repos\Ice-and-Fire-Restaurant\Source\IFR.Entity\obj\Debug\net5.0\IFR.Entity.pdb

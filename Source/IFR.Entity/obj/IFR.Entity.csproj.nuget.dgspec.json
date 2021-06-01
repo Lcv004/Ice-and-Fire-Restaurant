@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\source\\IFR.Entity\\IFR.Entity.csproj": {}
+    "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\Source\\IFR.Entity\\IFR.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\source\\IFR.Entity\\IFR.Entity.csproj": {
+    "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\Source\\IFR.Entity\\IFR.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\source\\IFR.Entity\\IFR.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\Source\\IFR.Entity\\IFR.Entity.csproj",
         "projectName": "IFR.Entity",
-        "projectPath": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\source\\IFR.Entity\\IFR.Entity.csproj",
+        "projectPath": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\Source\\IFR.Entity\\IFR.Entity.csproj",
         "packagesPath": "C:\\Users\\LuiggiCV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\source\\IFR.Entity\\obj\\",
+        "outputPath": "C:\\Users\\LuiggiCV\\source\\repos\\Ice-and-Fire-Restaurant\\Source\\IFR.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -7,8 +7,8 @@ namespace IFR.Entity
     class Inventory
     {
         // Attributes
-        public int ID { get;, set; }
-        public List<Product> Products { get;, set; };
-        public List<int> ProductQuantities { get;, set; };
+        public int ID { get; set; }
+        public List<Product> Products { get; set; }
+        public List<int> ProductQuantities { get; set; }
     }
 }

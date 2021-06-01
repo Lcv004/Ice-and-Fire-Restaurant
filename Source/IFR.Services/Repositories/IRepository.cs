@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-namespace Restaurant
+namespace IFR.Services.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {
