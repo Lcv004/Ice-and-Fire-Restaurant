@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace restaurant
+namespace IFR.Entity
 {
 	public class Menu
 	{

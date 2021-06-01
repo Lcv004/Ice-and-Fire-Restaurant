@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace restaurant
+namespace IFR.Entity
 {
     // This class represents the stock
     // of products the restaurant has.

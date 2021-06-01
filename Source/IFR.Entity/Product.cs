@@ -1,4 +1,4 @@
-namespace Restaurant
+namespace IFR.Entity
 {
     // This class is a representation
     // of an ingredient of a dish.
