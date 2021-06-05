@@ -4,24 +4,21 @@ using IFR.Entity;
 
 namespace IFR.Services.Repositories
 {
-    public class ProductRepository : IRepository<Product>
+    public class ProductRepository : IRepository<long, Product>
     {
         Dictionary<long, Product> _productDictionary;
-        long _key;
+        long _id;
 
         private ProductRepository()
         {
              _productDictionary = new Dictionary<long, Product>();
-             _key = 0;
+             _id = 0;
         }
 
         public void Add(Product entity)
         {
-            if (!_productDictionary.ContainsKey(_key))
-            {
-                _key ++;
-                _productDictionary.Add(_key, entity);
-            }
+            _id ++;
+            _productDictionary.Add(_id, entity);
         }
 
         public void Remove(long key)
@@ -34,14 +31,7 @@ namespace IFR.Services.Repositories
 
         public Product Get(long key)
         {
-            if (_productDictionary.ContainsKey(key))
-            {
-                return _productDictionary[key];
-            }
-            else
-            {
-                return null;
-            }
+            return _productDictionary[key];
         }
 
         public IEnumerable<Product> GetAll()
