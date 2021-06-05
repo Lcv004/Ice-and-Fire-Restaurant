@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace IFR.Services.Repositories
 {
-    public interface IRepository<TEntity> where TEntity : class
+    public interface IRepository<TKey, TEntity> where TEntity : class
     {
         void Add(TEntity entity);
-        void Remove(TEntity entity);
-        TEntity Get(long id);
+        void Remove(TKey key);
+        TEntity Get(TKey key);
         IEnumerable<TEntity> GetAll();
     }
 }
