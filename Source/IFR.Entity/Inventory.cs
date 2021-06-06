@@ -4,7 +4,7 @@ namespace IFR.Entity
 {
     // This class represents the stock
     // of products the restaurant has.
-    class Inventory
+    public class Inventory
     {
         // Attributes
         public int ID { get; set; }
