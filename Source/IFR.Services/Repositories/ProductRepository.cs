@@ -9,7 +9,7 @@ namespace IFR.Services.Repositories
         Dictionary<long, Product> _productDictionary;
         long _id;
 
-        private ProductRepository()
+        public ProductRepository()
         {
              _productDictionary = new Dictionary<long, Product>();
              _id = 0;
