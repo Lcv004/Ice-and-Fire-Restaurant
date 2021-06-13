@@ -8,7 +8,7 @@ namespace IFR.Services.Repositories
         Dictionary<long, Inventory> _inventoryDictionary;
         long _id;
 
-        private InventoryRepository()
+        public InventoryRepository()
         {
              _inventoryDictionary = new Dictionary<long, Inventory>();
              _id = 0;
