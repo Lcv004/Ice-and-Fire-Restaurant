@@ -8,7 +8,7 @@ namespace IFR.Services.Repositories
         Dictionary<long, Menu> _menuDictionary;
         long _id;
 
-        private MenuRepository()
+        public MenuRepository()
         {
              _menuDictionary = new Dictionary<long, Menu>();
              _id = 0;
