@@ -8,7 +8,7 @@ namespace IFR.Services.Repositories
         Dictionary<long, Order> _orderDictionary;
         long _id;
 
-        private OrderRepository()
+        public OrderRepository()
         {
              _orderDictionary = new Dictionary<long, Order>();
              _id = 0;
