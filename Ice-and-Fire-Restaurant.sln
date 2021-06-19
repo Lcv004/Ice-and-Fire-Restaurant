@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFR.Entity", "Source\IFR.Entity\IFR.Entity.csproj", "{7106D7AC-289C-424A-887C-C8A0AC5D4FA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Src\Main\C#\Entity\Entity.csproj", "{7106D7AC-289C-424A-887C-C8A0AC5D4FA5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFR.Services", "Source\IFR.Services\IFR.Services.csproj", "{33E4F68C-4514-4425-8B5B-EC2A0620A6EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Src\Main\C#\Services\Services.csproj", "{33E4F68C-4514-4425-8B5B-EC2A0620A6EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{AC839285-7E4F-4E7A-94AE-4FFA114BC032}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{AC839285-7E4F-4E7A-94AE-4FFA114BC032}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFR.Utilities", "Source\IFR.Utilities\IFR.Utilities.csproj", "{0B645121-E663-4117-B527-CB7FAEBEA66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Src\Main\C#\Utilities\Utilities.csproj", "{0B645121-E663-4117-B527-CB7FAEBEA66F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
