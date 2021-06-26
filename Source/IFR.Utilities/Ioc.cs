@@ -7,11 +7,14 @@ namespace IFR.Utilities
 {
     public class Ioc
     {
-        public static Ioc _instance;
+        private static Ioc _instance;
         public static Dictionary<string, object> _serviceInstances;
         
         private Ioc()
         {
+            _instance = Ioc.getInstance();
+            _serviceInstances = new Dictionary<string, object>();
+
             // Repository instances
             _serviceInstances.Add("ProductRepository", new ProductRepository());
             _serviceInstances.Add("InventoryRepository", new InventoryRepository());
