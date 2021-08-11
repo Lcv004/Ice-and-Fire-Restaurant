@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\IFR.Entity\IFR.Entity.csproj" />
+    <ProjectReference Include="..\IFR.Services\IFR.Services.csproj" />
+    <ProjectReference Include="..\IFR.Utilities\IFR.Utilities.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+</Project>
