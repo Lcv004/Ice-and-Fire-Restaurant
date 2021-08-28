@@ -58,13 +58,13 @@ namespace IFR.Tests
 
             if (inventories > 0)
             {
-                Console.WriteLine("First product: {0} \t\t Price: {1}",
+            Console.WriteLine("First product: {0} \t\t Price: {1}",
                               inventoryController.Get(1).Products[0].Name,
                               inventoryController.Get(1).Products[0].Price);
-                Console.WriteLine("Third product: {0} \t Price: {1}",
-                                  inventoryController.Get(1).Products[2].Name,
-                                  inventoryController.Get(1).Products[2].Price);
-            }
+            Console.WriteLine("Third product: {0} \t Price: {1}",
+                              inventoryController.Get(1).Products[2].Name,
+                              inventoryController.Get(1).Products[2].Price);
+        }
             
 
             inventoryController.Remove(1);
