@@ -75,12 +75,12 @@ namespace IFR.Tests
 
             if (menus > 0)
             {
-                Console.WriteLine("In Cold dishes of the menu are:\n");
-                foreach (Product dish in menuController.Get(1).Category["Hot dishes"])
-                {
-                    Console.WriteLine(dish.Name);
-                }
+            Console.WriteLine("In Cold dishes of the menu are:\n");
+            foreach (Product dish in menuController.Get(1).Category["Hot dishes"])
+            {
+                Console.WriteLine(dish.Name);
             }
         }
     }
+}
 }
