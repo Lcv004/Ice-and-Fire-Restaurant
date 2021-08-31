@@ -4,7 +4,10 @@ namespace IFR.Tests
     {
         static void Main(string[] args)
         {
-            ProductTest.Test();
+            //ProductTest.Test)();
+            //InventoryTest.Test();
+            //MenuTest.Test();
+            OrderTest.Test();
         }
     }
 }

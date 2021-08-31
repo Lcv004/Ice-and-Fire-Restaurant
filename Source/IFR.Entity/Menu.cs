@@ -4,6 +4,6 @@ namespace IFR.Entity
 {
 	public class Menu
 	{
-		public List<Product> Products { get; set; }
+		public Dictionary<string, List<Product>> Category { get; set; }
 	}
 }
