@@ -6,7 +6,8 @@ namespace IFR.Tests
         {
             //ProductTest.Test)();
             //InventoryTest.Test();
-            MenuTest.Test();
+            //MenuTest.Test();
+            OrderTest.Test();
         }
     }
 }
