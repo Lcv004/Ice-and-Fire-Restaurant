@@ -15,6 +15,16 @@ namespace IFR.Services.Controllers
         
         public void Add(Order entity)
         {
+            float orderCost = 0.0f;
+            int orderComplexity = 0;
+            for (int p = 0; p < entity.Products.Count; p++)
+            {
+                orderCost += entity.Products[p].Price * entity.Quantities[p];
+                orderComplexity += entity.Products[p].Complexity;
+            }
+            entity.Cost = orderCost;
+            entity.Complexity = orderComplexity;
+
             _orderRepository.Add(entity);
         }
         public void Remove(long key)
@@ -28,6 +38,14 @@ namespace IFR.Services.Controllers
         public IEnumerable<Order> GetAll()
         {
             return _orderRepository.GetAll();
+        }
+        public IEnumerable<long> FindByStatus(int status)
+        {
+            return _orderRepository.FindByStatus(status);
+        }
+        public IEnumerable<long> FindIncompleteOrders()
+        {
+            return _orderRepository.FindIncompleteOrders();
         }
     }
 }

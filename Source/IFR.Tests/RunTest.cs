@@ -7,7 +7,9 @@ namespace IFR.Tests
             //ProductTest.Test)();
             //InventoryTest.Test();
             //MenuTest.Test();
-            OrderTest.Test();
+            //OrderTest.Test();
+            //OrderManagerTest.Test();
+            KitchenSimulatorTest.Test();
         }
     }
 }

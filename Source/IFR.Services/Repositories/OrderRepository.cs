@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using IFR.Entity;
 
 namespace IFR.Services.Repositories
@@ -36,6 +37,32 @@ namespace IFR.Services.Repositories
         public IEnumerable<Order> GetAll()
         {
             return _orderDictionary.Values;
+        }
+
+        public IEnumerable<long> FindByStatus(int status)
+        {
+            var result = new List<long>();
+            foreach (KeyValuePair<long, Order> kvp in _orderDictionary)
+            {
+                if (kvp.Value.Status == status)
+                {
+                    result.Add(kvp.Key);
+                }
+            }
+            return result;
+        }
+
+        public IEnumerable<long> FindIncompleteOrders()
+        {
+            var result = new List<long>();
+            foreach (KeyValuePair<long, Order> kvp in _orderDictionary)
+            {
+                if (kvp.Value.Status != OrderStatus.CANCELED && kvp.Value.Status != OrderStatus.DONE)
+                {
+                    result.Add(kvp.Key);
+                }
+            }
+            return result;
         }
     }
 }

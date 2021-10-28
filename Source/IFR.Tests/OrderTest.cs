@@ -13,11 +13,6 @@ namespace IFR.Tests
     {
         public static void Test()
         {
-            // To order you check the menu. So I have to:
-            // 1. Create products and categories.
-            // 2. Create a menu.
-            // 3. Place orders based on menu.
-
             Ioc ioc = Ioc.getInstance();
             var orderController = (OrderController)Ioc._serviceInstances["OrderController"];
 
@@ -49,44 +44,94 @@ namespace IFR.Tests
                 Price = 4.99f
             };
 
-            var order = new Order
+            var firstOrder = new Order
             {
-                Customer = "",
+                Customer = "LC",
+                Products = new List<Product>(),
+                Quantities = new List<int>(),
+                Cost = 0.0f,
+                Status = 2
+            };
+
+            var secondOrder = new Order
+            {
+                Customer = "MVP",
                 Products = new List<Product>(),
                 Quantities = new List<int>(),
                 Cost = 0.0f,
                 Status = 0
             };
 
-            order.Products.Add(buffaloWings);
-            order.Quantities.Add(3);
-            order.Products.Add(soup);
-            order.Quantities.Add(2);
-            order.Products.Add(salad);
-            order.Quantities.Add(1);
-            order.Products.Add(iceCream);
-            order.Quantities.Add(6);
+            firstOrder.Products.Add(buffaloWings);
+            firstOrder.Quantities.Add(3);
+            firstOrder.Products.Add(soup);
+            firstOrder.Quantities.Add(2);
+            firstOrder.Products.Add(salad);
+            firstOrder.Quantities.Add(1);
+            firstOrder.Products.Add(iceCream);
+            firstOrder.Quantities.Add(6);
 
-            for (int i = 0; i < order.Products.Count; i++)
+            secondOrder.Products.Add(soup);
+            secondOrder.Quantities.Add(1);
+            secondOrder.Products.Add(iceCream);
+            secondOrder.Quantities.Add(1);
+
+            firstOrder.Cost = sumProductsCosts(firstOrder);
+            secondOrder.Cost = sumProductsCosts(secondOrder);
+
+            orderController.Add(firstOrder);
+            orderController.Add(secondOrder);
+
+            Console.WriteLine("List of products ordered by {0}:", firstOrder.Customer);
+            for (int i = 0; i < firstOrder.Products.Count; i++)
             {
-                order.Cost = order.Products[i].Price + order.Quantities[i];
+                Console.WriteLine(firstOrder.Products[i].Name);
+            }
+            Console.WriteLine("\n-- Total Cost: {0}\n", firstOrder.Cost);
+
+            Console.WriteLine("List of products ordered by {0}:", secondOrder.Customer);
+            for (int i = 0; i < secondOrder.Products.Count; i++)
+            {
+                Console.WriteLine(secondOrder.Products[i].Name);
+            }
+            Console.WriteLine("\n-- Total Cost: {0}\n", secondOrder.Cost);
+
+            if (orderController.GetAll().Count() > 1)
+            {
+                Console.WriteLine("There are many orders!");
+            }
+            else if (orderController.GetAll().Count() > 0)
+            {
+                Console.WriteLine("There's an order!");
             }
 
-            orderController.Add(order);
-
-            Console.WriteLine("List of products ordered:");
-            for (int i = 0; i < order.Products.Count; i++)
+            if (orderController.FindByStatus(OrderStatus.DONE).Any())
             {
-                Console.WriteLine(order.Products[i].Name);
+                var completedOrders = orderController.FindByStatus(OrderStatus.DONE).Count();
+                Console.WriteLine("{0} orders completed.", completedOrders);
             }
-            Console.WriteLine("\n-- Total Cost: {0}\n", order.Cost);
+
+            if (orderController.FindIncompleteOrders().Any())
+            {
+                var incompletedOrders = orderController.FindIncompleteOrders().Count();
+                Console.WriteLine("{0} incomplete orders.", incompletedOrders);
+            }
 
             orderController.Remove(1);
 
             if (orderController.GetAll().Count() == 0)
             {
-                Console.WriteLine("Order deleted!");
+                Console.WriteLine("Orders deleted!");
             }
+        }
+
+        private static float sumProductsCosts(Order order)
+        {
+            for (int i = 0; i < order.Products.Count; i++)
+            {
+                order.Cost = order.Products[i].Price + order.Quantities[i];
+            }
+            return order.Cost;
         }
     }
 }
